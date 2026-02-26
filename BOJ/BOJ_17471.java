@@ -1,3 +1,9 @@
+package BOJ;
+
+/*
+ * BOJ 17471: 게리맨더링
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -128,4 +134,5 @@ public class BOJ_17471 {
 		
 		return cnt;
 	}
+
 }
