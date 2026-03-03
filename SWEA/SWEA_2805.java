@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 public class SWEA_2805 {
 	static int N;
 	static char[][] farm;
-
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
@@ -22,17 +22,18 @@ public class SWEA_2805 {
 			
 			for (int i = 0; i < N; i++) farm[i] = br.readLine().toCharArray();
 			
-			int sum = 0;
+			int ans = 0;
 			int M = N / 2;
 			
 			for (int i = 0; i < N; i++) {
-				int dist = Math.abs(i - M);
-				for (int j = dist; j < N - dist; j++) {
-					sum += farm[i][j] - '0';
+				for (int j = 0; j < N; j++) {
+					int dist = Math.abs(i - M) + Math.abs(j - M);
+					
+					if (dist <= M) ans += farm[i][j] - '0';
 				}
 			}
 			
-			System.out.println("#" + t + " " + sum);
+			System.out.println("#" + t + " " + ans);
 		}
 	}
 }
