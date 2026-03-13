@@ -1,3 +1,5 @@
+package BOJ;
+
 /*
  * BOJ 1916: 최소비용 구하기
  */
@@ -77,4 +79,5 @@ public class BOJ_1916 {
 			return this.val - o.val;
 		}
 	}
+
 }
