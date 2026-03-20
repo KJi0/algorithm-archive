@@ -1,4 +1,4 @@
-
+pacakge BOJ;
 
 /*
  * BOJ 1368: 물대기
