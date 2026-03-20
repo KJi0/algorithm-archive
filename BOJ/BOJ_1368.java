@@ -1,4 +1,4 @@
-pacakge BOJ;
+package BOJ;
 
 /*
  * BOJ 1368: 물대기
